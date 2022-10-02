@@ -41,8 +41,8 @@ public class LabforwardApplication implements CommandLineRunner {
 		try {
 			log.info("Entry : Create startup entries");
 			List<LabNotebook> noteBook = new ArrayList<>();
-			noteBook.add(new LabNotebook("id0", "name", "Word Word Word word"));
-			noteBook.add(new LabNotebook("id1", "name", "Word Words Wor word"));
+			noteBook.add(new LabNotebook("id0", "Project1", "Word Word Word word"));
+			noteBook.add(new LabNotebook("id1", "Project2", "Word Words Wor word"));
 			notebookRepo.insert(noteBook);
 		} catch (Exception e) {
 			log.info("The Startup data already exists");
