@@ -20,6 +20,9 @@ import com.labforward.skilltest.service.search.SearchService;
 @RestController
 public class SearchController {
 
+	/**
+	 *  Injecting  Search Service 
+	 */
 	@Autowired
 	SearchService searchService;
 

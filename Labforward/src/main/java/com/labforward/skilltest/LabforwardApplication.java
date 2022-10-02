@@ -23,6 +23,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class LabforwardApplication implements CommandLineRunner {
 
+	/**
+	 * Injecting the repository for Labnotebook
+	 */
 	@Autowired
 	LabNotebookRepository notebookRepo;
 

@@ -18,6 +18,9 @@ import com.labforward.skilltest.service.search.SearchService;
 @SpringBootTest
 class LabforwardApplicationTests {
 	
+	/**
+	 * Injecting Search service for testing the functionalities
+	 */
 	@Autowired
 	SearchService searchService;
 
