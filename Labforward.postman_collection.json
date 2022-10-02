@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "52d24402-4627-4edd-aa8b-ed799ee7bb28",
+		"name": "Labforward",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"id1\",\r\n    \"search_text\":\"Word\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/labnotebook/entry/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"labnotebook",
+						"entry",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

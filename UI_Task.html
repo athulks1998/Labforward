@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+            border-radius: 4px;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 1px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+
+        }
+
+         .search-container {
+            float: right;
+        }
+
+        .search-container input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 15px;
+            border: 2px solid grey;
+            border-radius: 4px;
+        }
+
+        .search-container button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            
+        }
+
+        .search-container button:hover {
+            background: #ccc;
+        }
+
+        .search-result {
+            background-color: yellow;
+            border-radius: 4px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .back-button{
+            font-size:  16px;
+            color: grey;
+            margin-right: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .exact-match {
+            background-color: green;
+            border-radius: 4px;
+            color: white;
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Top bar  with navigation to Home page and Inventory page  -->
+    <div class="topnav">
+        <a>Home</a>
+        <a class="active">Labnotebook</a>
+        <a>Inventory</a>
+        
+    </div>
+    <script>
+        function myalert() {
+            alert("1 exact match found for the word 'Medical'");
+        }
+    </script>
+    <div style="padding-left:16px">
+        <div class="search-container">
+            <!-- Input is set as Medical for showing the mock  -->
+           <input type="text" placeholder="Search.." name="search" value="Medical">
+            <!-- On click of search button an allert is thrown with the exact match frequency   -->
+           <button type="submit" onclick="myalert()" >Search</button>
+       </div>
+        <div class="header">
+            <h2>Anthropology</h2>
+        </div>
+        </div>
+        <!-- Similar words that are found after the API returns response are highlited in yellow  -->
+        <p><span class="exact-match">Medical</span> anthropology is the discipline in anthropology that addresses
+            disease and the health care systems developed to cope with disease. <span
+                class="search-result">Medicl</span> anthropologists study the spectrum of cultural and biological
+            factors that have contributed to health, disease, and health care systems throughout human experience from
+            cross-cultural, historical, and evolutionary points of view. They address a wide variety of health and
+            health care issues including cultural barriers to therapeutic and preventive health care; issues of
+            bioethics; the effect of pandemics, epidemics, and natural disasters; the impact of public policy on health
+            care, practitioner-patient communication in hospitals, clinics, private, and ethnomedical practices;
+            nutrition; perceived etiologies and their effect on therapeutic approaches to healing; differences in the
+            cultures of biomedical, ethnomedical, and other alternative health care systems; ethnographic studies of
+            healers, their patients and families, and their support systems; different types of practitioners
+            (biomedical, alternative, ethnomedical, religious) and the science and technology and medicines used in
+            their practices as well as how cross-cultural and societal differences shape biological and psychological
+            reactions to suffering. <span class="search-result">medical</span> anthropology is highly interdisciplinary
+            lending itself to ecology, geography, economics, linguistics,<span class="search-result"> Medial</span>
+            sociology, biochemistry, genetics, serology, anatomy, paleopathology, epidemiology, medicine, nursing, and
+            public health, among other disciplines.</p>
+    </div>
+
+</body>
+
+</html>
