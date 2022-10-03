@@ -20,7 +20,7 @@ import com.labforward.skilltest.repository.LabNotebookRepository;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author Athul K S INFO :
+ * @author Athul K S INFO : Implementation class for the search service 
  */
 @Slf4j
 @Service
